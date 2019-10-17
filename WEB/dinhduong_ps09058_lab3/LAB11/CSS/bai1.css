@@ -1,0 +1,25 @@
+table{
+    width:30% ;
+}
+table,th,td{
+    border:1px solid #B15153;
+    border-collapse: collapse;
+}
+tr:first-child{
+    background-color: aqua;
+    color: white;
+}
+tr:nth-child(2){
+    background-color: yellowgreen;
+}
+td{
+    text-align: center;
+    font-weight: bold;
+}
+td.a{
+    color: blue;
+}
+td.b{
+    color: blue;
+    font-weight: normal;
+}

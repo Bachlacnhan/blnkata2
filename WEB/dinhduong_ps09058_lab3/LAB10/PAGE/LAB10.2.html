@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+	.form-group{
+		margin:10px 0px}
+		.form-control{
+			width:98%;
+			padding:5px;
+			outline: none;
+			border:1px solid gray;
+			border-radius: 3px;
+		}
+		.form-group label{
+			font-weight: bold;
+			font-variant: small-caps;
+		}
+		.form-control:focus{
+			background: yellow;
+			box-shadow: 0 0 3px red;
+			border: 1px solid yellow;
+		}
+		.form-button{
+			padding:8px 30px;
+			outline:none;
+			border:none;
+			border-radius:20px;
+			font-weight:bold;
+			background-color:white;
+			color:orangered;
+			box-shadow:inset 0 0 20px blue;
+		}
+		.form-button:hover{
+			color:blue;
+			box-shadow:inset 0 0 20px orangered;
+		}
+		.form-button:disabled{
+			color:darkgray;
+			box-shadow: inset 0 0 20px gray;
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<div class="form-group"><label>Họ và tên:</label></div>
+	<input class="form-control" type="textbox"><br>
+	<div class="form-group"><label>Giới tính:</label><fieldset><input class="gt" type="radio">Nam <input class="gt" type="radio">Nữ <br></fieldset></div>
+		<div class="form-group"><label>Ngày Sinh:</label><input class="form-control" type="date" /></div>
+	<div class="form-group"><label>Điểm:</label><input class="form-control" type="number" min=0 max=10 step=0.25 /></div>
+	<div class="form-group"><label>Nghề Nghiệp:</label><input type="text" name="nnghiep" list="nn">
+		<datalist id="nn">
+			<option value="Designer"></option>
+			<option value="IT"></option>
+			<option value="PR"></option>
+			<option value="Gamer"></option>
+			<option value="Stylelist"></option>
+		</datalist></div>
+		<div class="form-group"><label>Sở thích</label><br>
+		<fieldset><input class="st" type="checkbox">Thể thao<input class="st" type="checkbox">Du lịch <input class="st" type="checkbox">Ẩm thực <input class="st" type="checkbox">Âm nhạc <br></fieldset></div>
+	<div class="form-group"><label>Ghi chú</label><br>
+		<input class="form-control" type="text"><br>
+		<hr><button class="form-button" type="submit">Đăng ký</button> <button class="form-button" type="submit">Nhập lại</button></div>
+	</form>
+</body>
+</html>
